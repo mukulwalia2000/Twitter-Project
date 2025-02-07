@@ -12,7 +12,7 @@ const hashtagsSchema = new mongoose.Schema({
         }
     ]
 
-},{timestamp: true}) ;
+},{timestamps: true}) ;
 
 const Hashtag = mongoose.model('Hashtag',hashtagsSchema);
 module.exports = Hashtag;
