@@ -15,11 +15,16 @@ constructor(){
     }
 
 
-    async getWithComments(id){
-        try{
-            const tweet =await Tweet.findById(id).populate({patch: 'comments'}).lean();
+    async getWithComments(id) {
+        try {
+            const tweet = await Tweet.findById(id).populate({
+                path: 'comments',
+                populate: {
+                    path: 'comments'
+                }
+            }).lean();
             return tweet;
-        }catch (error){
+        } catch (error) {
             console.log(error);
         }
     }
