@@ -2,15 +2,15 @@
   "name": "twitter-project",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.3",
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
     "nodemon": "^3.1.9"
